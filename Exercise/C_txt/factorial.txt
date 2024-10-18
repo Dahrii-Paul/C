@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include<conio.h>
+main()
+{
+	int no,fact=1;
+	printf("Enter any positive number less than 2147483648(i.e.2^31)\n");
+	scanf("%d",&no);
+	if(no>=0)
+	{
+		for(int i=no;i>1;i--)
+		{
+			fact=fact*i;
+		}
+		printf("factorial of %d is %d",no,fact);
+	}else
+	{
+		printf("Invalid Input\n");
+	}
+}
